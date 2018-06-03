@@ -3,7 +3,7 @@
 def pointGivenConf(cLow, cHigh): #Find point estimate when given confidence interval
 	errorMargin = (cHigh - cLow)/2
 	pEstimate = cLow + errorMargin
-	print("The Error Margin is " + str(errorMargin)) #BUG: 
+	print("The Error Margin is " + str(errorMargin)) #BUG: does not round, gives weird float
 	print("The point estimate is " + str(pEstimate))
 
 def zCrit(conf): #reminder to figure out scipy to use confidence intervals
